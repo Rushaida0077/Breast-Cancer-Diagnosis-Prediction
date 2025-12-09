@@ -45,7 +45,7 @@ This project predicts whether a breast cancer tumor is **malignant (M)** or **be
 
 
 ## How to Run
-1. Open `CSE_301_Assignment` in Google Colab  
+1. Open `CSE_301_Assignment.ipynb` in Google Colab  
 2. Upload `data.csv` if not already included  
 3. Run all cells in order:
    - Preprocessing  
@@ -54,7 +54,7 @@ This project predicts whether a breast cancer tumor is **malignant (M)** or **be
 
 
 ## Files in Repository
-- `CSE_301_Assignment` – Complete notebook  
+- `CSE_301_Assignment.ipynb` – Complete notebook  
 - `README.md` – This summary  
 
 
