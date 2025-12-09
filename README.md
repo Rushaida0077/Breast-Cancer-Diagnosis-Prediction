@@ -45,7 +45,7 @@ This project predicts whether a breast cancer tumor is **malignant (M)** or **be
 
 
 ## How to Run
-1. Open `breast_cancer_knn_kmeans.ipynb` in Google Colab  
+1. Open `CSE_301_Assignment` in Google Colab  
 2. Upload `data.csv` if not already included  
 3. Run all cells in order:
    - Preprocessing  
