@@ -15,22 +15,39 @@ This project predicts whether a breast cancer tumor is **malignant (M)** or **be
 
 
 ## Preprocessing
-1. Encoded `diagnosis` column (`M → 1`, `B → 0`)  
-2. Applied **Min-Max Normalization** to all features  
-3. Split dataset: **80% train / 20% test**
+1. **Encoding**
+   - Converted `diagnosis` column:  
+     `M → 1`, `B → 0`.
+
+2. **Cleaning**
+   - Dropped irrelevant columns: `id` and `Unnamed: 32`.
+
+3. **Scaling**
+   - Applied **Min-Max Normalization** to scale all feature columns between 0 and 1.
+
+4. **Splitting**
+   - Data was split into:
+     - Training set: **80%**
+     - Testing set: **20%**
 
 
 
 ## Machine Learning
 ### K-Means
-- **Clusters:** k = 2  
-- Purpose: Explore natural separation of benign and malignant tumors  
-- Comparison with true labels showed high correspondence with actual diagnoses
+
+- **Purpose**: Explore natural grouping of tumors.
+- **Parameters**: `k = 2` clusters
+- **Outcome**:
+  - Cluster 0 and Cluster 1 roughly correspond to benign and malignant tumors.
+  - Comparison with true labels helps understand separability of the dataset.
 
 ### KNN
-- **Neighbors:** k = 5  
-- Trained on 80% training data  
-- Tested on 20% test data
+- **Purpose**: Predict tumor type using a supervised learning approach.
+- **Parameters**:
+  - Number of neighbors: `k = 5`
+  - Distance metric: Euclidean (default)
+- **Training**: Trained on the 80% training data.
+- **Prediction**: Tested on 20% test data.
 
 
 
@@ -41,6 +58,13 @@ This project predicts whether a breast cancer tumor is **malignant (M)** or **be
 | Precision  | 0.9534883720930233  |
 | Recall     | 0.9534883720930233  |
 | F1-Score   | 0.9534883720930233  |
+
+
+## Libraries Used
+
+- `pandas` – data manipulation    
+- `scikit-learn` – machine learning algorithms (`KNeighborsClassifier`, `KMeans`, `MinMaxScaler`, `train_test_split`, `accuracy_score, precision_score, recall_score, f1_score` )  
+
 
 
 
