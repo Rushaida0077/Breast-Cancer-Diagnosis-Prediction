@@ -52,12 +52,12 @@ This project predicts whether a breast cancer tumor is **malignant (M)** or **be
 
 
 ## Evaluation
-| Metric     | Result              |
-|------------|---------------------|
-| Accuracy   | 0.9649122807017544  |
-| Precision  | 0.9534883720930233  |
-| Recall     | 0.9534883720930233  |
-| F1-Score   | 0.9534883720930233  |
+| Metric     | Result  |
+|------------|---------|
+| Accuracy   | 0.9649  |
+| Precision  | 0.9535  |
+| Recall     | 0.9535  |
+| F1-Score   | 0.9535  |
 
 
 ## Libraries Used
